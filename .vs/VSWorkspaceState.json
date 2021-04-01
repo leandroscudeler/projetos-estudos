@@ -1,6 +1,8 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\FluentValidation"
   ],
+  "SelectedNode": "\\FluentValidation\\FluentValidation.sln",
   "PreviewInSolutionExplorer": false
 }
