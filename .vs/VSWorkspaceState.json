@@ -1,8 +1,8 @@
 {
   "ExpandedNodes": [
     "",
-    "\\FluentValidation"
+    "\\Kafka"
   ],
-  "SelectedNode": "\\FluentValidation\\FluentValidation.sln",
+  "SelectedNode": "\\Kafka",
   "PreviewInSolutionExplorer": false
 }
