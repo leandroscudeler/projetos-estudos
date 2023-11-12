@@ -11,7 +11,7 @@ namespace Kafka_Producer
         {
             var config = new ProducerConfig { BootstrapServers = "localhost:9092" };
 
-           
+
             using (var p = new ProducerBuilder<Null, string>(config).Build())
             {
                 try
@@ -25,7 +25,7 @@ namespace Kafka_Producer
 
                         Thread.Sleep(2000);
                     }
-                 
+
                 }
                 catch (ProduceException<Null, string> e)
                 {
