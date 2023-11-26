@@ -1,0 +1,13 @@
+services:
+  catalogdb:
+    image: mongo
+  productapi:
+    build:
+      context: C:\projetos\Catalog
+      dockerfile: ProductAPI/Dockerfile
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+    image: productapi
+    ports:
+    - target: 80
+version: '3.4'
