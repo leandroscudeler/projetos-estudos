@@ -1,0 +1,36 @@
+services:
+  apimysqldocker:
+    build:
+      context: D:\labs\docker\ApiMySqlDocker
+      dockerfile: ApiMySqlDocker/Dockerfile
+    container_name: products.api
+    depends_on:
+      database:
+        condition: service_started
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+    image: apimysqldocker
+    ports:
+    - published: 5000
+      target: 80
+    - target: 80
+    restart: always
+  database:
+    container_name: mysqldb
+    environment:
+      MYSQL_DATABASE: productsdb
+      MYSQL_PASSWORD: numsey
+      MYSQL_RANDOM_ROOT_PASSWORD: 1
+      MYSQL_USER: mac
+    expose:
+    - '3306'
+    image: mysql
+    ports:
+    - published: 3306
+      target: 3306
+    restart: always
+    volumes:
+    - dbmysql-volume:/var/lib/mysql:rw
+version: '3.4'
+volumes:
+  dbmysql-volume: {}

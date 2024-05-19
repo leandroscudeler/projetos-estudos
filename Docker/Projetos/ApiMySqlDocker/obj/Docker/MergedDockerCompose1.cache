@@ -1,0 +1,11 @@
+services:
+  apimysqldocker:
+    build:
+      context: D:\labs\docker\ApiMySqlDocker
+      dockerfile: ApiMySqlDocker/Dockerfile
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+    image: apimysqldocker
+    ports:
+    - target: 80
+version: '3.4'

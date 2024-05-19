@@ -1,0 +1,28 @@
+services:
+  EFCoreSqlServer:
+    build:
+      context: D:\_aspncore_2021\Curso\EFCoreDocker
+      dockerfile: EFCoreSqlServer/Dockerfile
+    depends_on:
+      sqlserver:
+        condition: service_started
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+    image: productswebapi
+    ports:
+    - published: 32033
+      target: 80
+  sqlserver:
+    environment:
+      ACCEPT_EULA: "Y"
+      SA_PASSWORD: Numsey#2021
+    expose:
+    - '1433'
+    hostname: sqlserver
+    image: microsoft/mssql-server-linux:2017-latest
+    ports:
+    - published: 11433
+      target: 1433
+    volumes:
+    - c:\dados\volumes\mssql:/var/opt/mssql3:rw
+version: '3.4'

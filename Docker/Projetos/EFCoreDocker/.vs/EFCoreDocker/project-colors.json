@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "3e20ccb2-309d-40d3-8633-675c0a3967a7": {
+      "ProjectGuid": "3e20ccb2-309d-40d3-8633-675c0a3967a7",
+      "DisplayName": "EFCoreSqlServer",
+      "ColorIndex": 0
+    }
+  },
+  "NextColorIndex": 1
+}
