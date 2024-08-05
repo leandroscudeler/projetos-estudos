@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "bc098a8d-42eb-48a9-bc78-57d057e02ce5": {
+      "ProjectGuid": "bc098a8d-42eb-48a9-bc78-57d057e02ce5",
+      "DisplayName": "Discount.Grpc",
+      "ColorIndex": 0
+    }
+  },
+  "NextColorIndex": 1
+}
