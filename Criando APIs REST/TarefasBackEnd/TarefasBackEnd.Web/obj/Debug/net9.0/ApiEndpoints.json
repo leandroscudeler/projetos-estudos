@@ -1,0 +1,28 @@
+[
+  {
+    "ContainingType": "TarefasBackEnd.Web.Controllers.TarefaController",
+    "Method": "Get",
+    "RelativePath": "tarefa",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TarefasBackEnd.Web.Controllers.TarefaController",
+    "Method": "Create",
+    "RelativePath": "tarefa",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "model",
+        "Type": "TarefasBackEnd.Web.Models.Tarefa",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]

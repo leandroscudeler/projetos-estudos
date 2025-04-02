@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\buildMultiTargeting\TarefasBackEnd.Web.props" />
+</Project>
